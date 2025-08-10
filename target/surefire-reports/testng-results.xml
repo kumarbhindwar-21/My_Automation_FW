@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-10T16:45:26 IST" name="Suite" finished-at="2025-08-10T16:45:32 IST" duration-ms="5940">
+    <groups>
+    </groups>
+    <test started-at="2025-08-10T16:45:26 IST" name="dragAndDropTest" finished-at="2025-08-10T16:45:32 IST" duration-ms="5940">
+      <class name="com.selenium.LoginTest">
+        <test-method signature="dragAndDropTest()[pri:0, instance:com.selenium.LoginTest@635eaaf1]" started-at="2025-08-10T16:45:26 IST" name="dragAndDropTest" finished-at="2025-08-10T16:45:32 IST" duration-ms="5901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropTest -->
+      </class> <!-- com.selenium.LoginTest -->
+    </test> <!-- dragAndDropTest -->
+  </suite> <!-- Suite -->
+</testng-results>
