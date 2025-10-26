@@ -26,5 +26,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
 
-      - name: Run Tests with Maven
-        run: mvn clean test --batch-mode
+      - name: Verify Chrome installation
+        run: google-chrome --version
+
+      - name: Run Maven tests (Selenium)
+        run: mvn clean test --batch-mode -Dsurefire.useFile=false
