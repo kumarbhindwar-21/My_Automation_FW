@@ -21,9 +21,10 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Build and Test with Maven
-        run: mvn clean test --batch-mode
+      - name: Install Chrome
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
 
-      # Optional: upload dependency graph for Dependabot alerts
-      - name: Update dependency graph
-        uses: advanced-security/maven-dependency-submission-action@v4
+      - name: Run Tests with Maven
+        run: mvn clean test --batch-mode
